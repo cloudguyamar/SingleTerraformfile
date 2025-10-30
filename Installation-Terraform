@@ -1,0 +1,36 @@
+Create a Single Instance in AWS 
+
+Install Terraform in the running instance
+
+How to install Terraform on a EC2 instance and use IAM service to securely perform Terraform commands
+
+First things first. Update the Linux instance.
+
+sudo yum update -y
+
+Once you are done, you will se update completed output.
+
+Install Amazon utils
+
+sudo yum install -y yum-utils
+
+Add hashicorp repo
+
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+
+Now the environment is set, you can install terraform
+
+sudo yum -y install terraform
+
+Finally check to see that it is installed properly.
+
+terraform — version
+
+
+
+
+
+
+Reference:
+
+https://medium.com/@mehmetodabashi/how-to-install-terraform-on-a-ec2-instance-and-use-iam-service-to-securely-perform-terraform-c3088dbffc40
